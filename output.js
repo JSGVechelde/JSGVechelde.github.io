@@ -2,8 +2,8 @@
 lp1 = 13
 lp2 = 12
 lp3 = 14
-lp4 = 15 // Normalerweise 16
-lp5 = 16 // Normalerweise 17
+lp4 = 16 
+lp5 = 17 
 extras = 18
 
 

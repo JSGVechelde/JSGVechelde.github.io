@@ -1993,7 +1993,7 @@ function end() {
 /* Überprüfungen, ob alles gewählt wurde */
 function check_for_complete_p() {
   var p_gewaehlt = [false, false, false, false, false]
-  var lp = [14, 13, 15, 16, 17] // Normal [14, 13, 15, 17, 18]
+  var lp = [14, 13, 15, 17, 18] 
   for (let index = 1; index < 6; index++) {
     for (let k = 1; k < lp[index - 1]; k++) {
       if (document.getElementById("pfach" + index + "." + k).checked == true) {
