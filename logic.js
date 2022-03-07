@@ -143,8 +143,8 @@ function logicvariables() {
   sessionStorage.setItem('lp1', 13)
   sessionStorage.setItem('lp2', 12)
   sessionStorage.setItem('lp3', 14)
-  sessionStorage.setItem('lp4', 15) // Normalerweise 16
-  sessionStorage.setItem('lp5', 16) // Normalerweise 17
+  sessionStorage.setItem('lp4', 16) 
+  sessionStorage.setItem('lp5', 17) 
 
   sessionStorage.setItem('pfaecher_gewaehlt', false)
   sessionStorage.setItem('gks_gewaehlt', false)
