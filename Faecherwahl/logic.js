@@ -371,7 +371,7 @@ function logicsubjects(i) {
             waehlbarkeit('physik_wl', false)
             break
           case 'Informatik':
-            waehlbarkeit('Deutsch', false)
+            waehlbarkeit('deutsch_wl', false)
             waehlbarkeit('franzoesisch_wl', false)
             waehlbarkeit('latein_wl', false)
             waehlbarkeit('musik_wl', false)
@@ -760,6 +760,7 @@ function logicsubjects(i) {
       }
       //Wenn Kunst P2-P5 ist
       sessionStorage.setItem('musik_w', false)
+      sessionStorage.setItem('musik_wl', false)
       nicht_kernfaecher_add()
       bereich_add('A')
       waehlbarkeit('kunst_w', false)
@@ -779,6 +780,7 @@ function logicsubjects(i) {
         waehlbarkeit('powi_wl', false)
       }
       sessionStorage.setItem('kunst_w', false)
+      sessionStorage.setItem('kunst_wl', false)
       nicht_kernfaecher_add()
       bereich_add('A')
       waehlbarkeit('musik_w', false)
