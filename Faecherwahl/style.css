@@ -13,7 +13,7 @@ html {
 }
 
 .bgimg {
-    background-image: url(pictures/background2.JPEG);
+    background-image: url(pictures/background2.jpeg);
     /*background-position: 800px 20%;*/
     background-attachment: scroll;
     overflow-x: auto;
