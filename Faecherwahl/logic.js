@@ -801,6 +801,7 @@ function logicsubjects(i) {
         //sessionStorage.setItem('p2_waehlbar[4]', false)
         waehlbarkeit('biologie_wl', false)
         waehlbarkeit('kunst_wl', false)
+        waehlbarkeit('informatik_wl', false)
       }
       nicht_kernfaecher_add()
       bereich_add('B')
