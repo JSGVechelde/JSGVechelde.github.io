@@ -20,8 +20,7 @@
     <div class="grid-container3">
 
         <button class="printbutton button1" onclick="modifyPdf()" id="printbutton">PDF herunterladen</button>
-        <button class="resetbutton button1" onclick="location.href='faecherwahl_main.html'" type="button"
-            id="resetbutton">Nochmal wählen</button>
+        <button class="resetbutton button1" onclick="location.href='faecherwahl_main.html'" type="button" id="resetbutton">Nochmal wählen</button>
         <input type="text" class="name" name="name" id="name" readonly>
         <label for="name" class="namelabel" id="namelabel"> Vorname: </label>
         <input type="text" class="lastname" name="lastname" id="lastname" readonly>
@@ -68,7 +67,7 @@
         <input type="text" class="extra14" name="extra14" id="extra14" readonly>
         <label for="extra14" class="extra14label" id="extra14label">Physik:</label>
         <input type="text" class="extra15" name="extra15" id="extra15" readonly>
-        <label for="extra15" class="extra15label" id="extra15label">Politik Wirtschaft:</label>
+        <label for="extra15" class="extra15label" id="extra15label">Politik-Wirtschaft:</label>
         <input type="text" class="extra18" name="extra18" id="extra16" readonly>
         <label for="extra18" class="extra18label" id="extra16label">Religion:</label>
         <input type="text" class="extra16" name="extra16" id="extra17" readonly>
@@ -107,7 +106,10 @@
 
             const pages = pdfDoc.getPages()
             const firstPage = pages[0]
-            const { width, height } = firstPage.getSize()
+            const {
+                width,
+                height
+            } = firstPage.getSize()
 
             draw_text_to_pdf(lastname, 135, height - 80, firstPage, helveticaFont, rgb)
             draw_text_to_pdf(firstname, 320, height - 80, firstPage, helveticaFont, rgb)
@@ -194,7 +196,7 @@
                             draw_cross(gk_x, 259, firstPage)
                         }
                         break;
-                    case 'Mathe':
+                    case 'Mathematik':
                         if (i < 4) {
                             draw_cross(175, 243.5, firstPage)
                         } else {
@@ -215,7 +217,7 @@
                             draw_cross(gk_x, 214.5, firstPage)
                         }
                         break;
-                    case 'Politik Wirtschaft':
+                    case 'Politik-Wirtschaft':
                         if (i < 4) {
                             if (sessionStorage.getItem('profil') != 'gese') {
                                 draw_cross(175, 199.75, firstPage)
@@ -282,7 +284,7 @@
                         case "Physik:":
                             draw_cross(gk_x, 214.5, firstPage)
                             break;
-                        case "Politik Wirtschaft:":
+                        case "Politik-Wirtschaft:":
                             draw_cross(gk_x, 199.75, firstPage)
                             break;
                         case "Religion:":
@@ -305,13 +307,13 @@
             let kunst_wish_x = 212
             let musik_wish_x = 282.75
             let religion_wish_x = 353.5
-            if(sessionStorage.getItem('profil') == 'muku' || sessionStorage.getItem('profil') == 'gese'){
+            if (sessionStorage.getItem('profil') == 'muku' || sessionStorage.getItem('profil') == 'gese') {
                 kunst_wish_x = 35
                 musik_wish_x = 141
             }
             if (sessionStorage.getItem('profil') == 'muku') {
                 religion_wish_x = 212
-                }
+            }
             if (sessionStorage.getItem('profil') == 'gese') {
                 religion_wish_x = 247.5
             }
@@ -322,7 +324,7 @@
                 case 'Kunst':
                     draw_cross(kunst_wish_x, 70, firstPage)
                     break;
-                case 'Politik Wirtschaft':
+                case 'Politik-Wirtschaft':
                     draw_cross(powi_wish_x, 70, firstPage)
                     break;
                 case 'Musik':
@@ -339,14 +341,26 @@
         function draw_cross(a, e, firstPage) {
             firstPage.drawLine({
                 color: rgb(0, 0, 0),
-                start: { x: a, y: e },
-                end: { x: a + 10, y: e + 10 },
+                start: {
+                    x: a,
+                    y: e
+                },
+                end: {
+                    x: a + 10,
+                    y: e + 10
+                },
                 thickness: 1
             })
             firstPage.drawLine({
                 color: rgb(0, 0, 0),
-                start: { x: a, y: e + 10 },
-                end: { x: a + 10, y: e },
+                start: {
+                    x: a,
+                    y: e + 10
+                },
+                end: {
+                    x: a + 10,
+                    y: e
+                },
                 thickness: 1
             })
         }

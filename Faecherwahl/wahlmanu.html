@@ -2,29 +2,29 @@
 <html lang="de">
 
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="Seminarfuchs2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Seminarfuchs2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title> Fächerwahl </title>
     <script src="logic.js"></script>
     <script src="script.js"></script>
     <script>
-      function check() {
-          if (check_for_complete_gk_manu() == true) {
-            end()
-            sessionStorage.setItem('gks_gewaehlt', true)
-            wahl3()
-          } else {
-              alert('Es wurde noch nicht alles gewählt. Bitte wählen Sie alle benötigten Fächer aus.')
-          }
-      }
+        function check() {
+            if (check_for_complete_gk_manu() == true) {
+                end()
+                sessionStorage.setItem('gks_gewaehlt', true)
+                wahl3()
+            } else {
+                alert('Es wurde noch nicht alles gewählt. Bitte wählen Sie alle benötigten Fächer aus.')
+            }
+        }
     </script>
-  </head>
+</head>
 
-  <body onload="page2(), check_for_pfaecher_gewaehlt(), mana()">
+<body onload="page2(), check_for_pfaecher_gewaehlt(), mana()">
     <div class="bgimg grid-container2">
         <textarea name="name" id="name" cols="40" rows="1" class="head-input2" readonly></textarea>
         <textarea name="pflicht" id="pflicht" cols="40" rows="1" class="pflicht_gk" readonly>Pflicht: </textarea>
@@ -41,18 +41,18 @@
             <label for="wn" id="wn.label">Werte und Normen</label>
         </div>
         <div class="muku w3-animate-top toggle-buttons" title="Entweder Musik, Kunst oder DS als Grundkurs belegen" id="div_muku">
-          <p class="header">Musisch-Künstlerisch</p>
-          <input type="radio" name="extra2" id="musik" onclick="set_musik()">
-          <label for="musik" id="musik.label">Musik</label>
-          <br>
-          <br>
-          <input type="radio" name="extra2" id="kunst" onclick="set_kunst()">
-          <label for="kunst" id="kunst.label">Kunst</label>
-          <br>
-          <br>
-          <input type="radio" name="extra2" id="ds" onclick="set_ds()">
-          <label for="ds" id="ds.label">Darstellendes Spiel</label>
-      </div>
+            <p class="header">Musisch-Künstlerisch</p>
+            <input type="radio" name="extra2" id="musik" onclick="set_musik()">
+            <label for="musik" id="musik.label">Musik</label>
+            <br>
+            <br>
+            <input type="radio" name="extra2" id="kunst" onclick="set_kunst()">
+            <label for="kunst" id="kunst.label">Kunst</label>
+            <br>
+            <br>
+            <input type="radio" name="extra2" id="ds" onclick="set_ds()">
+            <label for="ds" id="ds.label">Darstellendes Spiel</label>
+        </div>
         <div class="fsprach w3-animate-top toggle-buttons" title="Eine Fremdsprache als Grundkurs belegen" id="div_fs">
             <p class="header">Fremdsprache</p>
             <input type="radio" name="extra3" id="englisch" onclick="set_englisch()">
@@ -92,31 +92,33 @@
             <input type="radio" name="extra5" id="physik" onclick="set_physik()">
             <label for="physik" id="physik.label">Physik</label>
             <br>
-            <br> <!--
+            <br>
+            <!--
             <input type="radio" name="extra5" id="informatik" onclick="set_informatik()">
             <label for="informatik" id="informatik.label">Informatik</label>-->
         </div>
         <div class="natu1-2 w3-animate-bottom toggle-buttons" title="Hier kannst du einen Wunsch angeben, welches Fach du vielleicht noch als P4 oder P5 festlegen möchtest und daher im 12. Jahrgang belegen möchtest">
-          <p class="header">In 12 belegen (optional)</p>
-          <input type="radio" name="extra6" id="Geschichte2" onclick="set_wish('Geschichte')">
-          <label for="Geschichte2" id="Geschichte2.label">Geschichte</label> 
-          <br>
-          <br>
-          <input type="radio" name="extra6" id="PoWi2" onclick="set_wish('Politik Wirtschaft')">
-          <label for="PoWi2" id="PoWi2.label">Politik Wirtschaft</label> 
-          <br>
-          <br>
-          <input type="radio" name="extra6" id="Kunst2" onclick="set_wish('Kunst')">
-          <label for="Kunst2" id="Kunst2.label">Kunst</label> 
-          <br>
-          <br>
-          <input type="radio" name="extra6" id="Musik2" onclick="set_wish('Musik')">
-          <label for="Musik2" id="Musik2.label">Musik</label> 
-          <br>
-          <br>
-          <input type="radio" name="extra6" id="Religion2" onclick="set_wish('Religion')">
-          <label for="Religion2" id="Religion2.label">Religion</label> 
+            <p class="header">In 12 belegen (optional)</p>
+            <input type="radio" name="extra6" id="Geschichte2" onclick="set_wish('Geschichte')">
+            <label for="Geschichte2" id="Geschichte2.label">Geschichte</label>
+            <br>
+            <br>
+            <input type="radio" name="extra6" id="PoWi2" onclick="set_wish('Politik-Wirtschaft')">
+            <label for="PoWi2" id="PoWi2.label">Politik-Wirtschaft</label>
+            <br>
+            <br>
+            <input type="radio" name="extra6" id="Kunst2" onclick="set_wish('Kunst')">
+            <label for="Kunst2" id="Kunst2.label">Kunst</label>
+            <br>
+            <br>
+            <input type="radio" name="extra6" id="Musik2" onclick="set_wish('Musik')">
+            <label for="Musik2" id="Musik2.label">Musik</label>
+            <br>
+            <br>
+            <input type="radio" name="extra6" id="Religion2" onclick="set_wish('Religion')">
+            <label for="Religion2" id="Religion2.label">Religion</label>
         </div>
-    </div>    
-  </body>
+    </div>
+</body>
+
 </html>
