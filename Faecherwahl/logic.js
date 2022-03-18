@@ -552,7 +552,7 @@ function logicsubjects(i) {
                     //Neu
                     //Hier mit Variablen arbeiten, da auf zwei Bändern
 
-                kernfaecher_add()
+
             }
 
             if (i === 2) {
@@ -591,6 +591,7 @@ function logicsubjects(i) {
             if (i > 1) {
                 fs_schon_gewaehlt_logic('Latein', 'Französisch', 'Spanisch')
             }
+            kernfaecher_add()
             bereich_add('A')
             waehlbarkeit('englisch_w', false)
             waehlbarkeit('englisch_wl', false)
@@ -609,7 +610,7 @@ function logicsubjects(i) {
                 waehlbarkeit('latein_wl', false)
                 waehlbarkeit('spanisch_wl', false)
 
-                kernfaecher_add()
+
             }
 
             if (i === 2) {
@@ -640,6 +641,7 @@ function logicsubjects(i) {
             }
             sessionStorage.setItem('latein_w', false)
             sessionStorage.setItem('spanisch_w', false)
+            kernfaecher_add()
             bereich_add('A')
             waehlbarkeit('franzoesisch_w', false)
             waehlbarkeit('franzoesisch_wl', false)
@@ -658,7 +660,7 @@ function logicsubjects(i) {
                 waehlbarkeit('spanisch_wl', false)
                 waehlbarkeit('franzoesisch_wl', false)
 
-                kernfaecher_add()
+
             }
 
             if (i === 2) {
@@ -689,6 +691,7 @@ function logicsubjects(i) {
             }
             sessionStorage.setItem('franzoesisch_w', false)
             sessionStorage.setItem('spanisch_w', false)
+            kernfaecher_add()
             bereich_add('A')
             waehlbarkeit('latein_w', false)
             waehlbarkeit('latein_wl', false)
@@ -707,7 +710,7 @@ function logicsubjects(i) {
                 waehlbarkeit('latein_wl', false)
                 waehlbarkeit('franzoesisch_wl', false)
 
-                kernfaecher_add()
+
             }
 
             if (i === 2) {
@@ -739,6 +742,7 @@ function logicsubjects(i) {
             sessionStorage.setItem('latein_w', false)
             sessionStorage.setItem('franzoesisch_w', false)
             bereich_add('A')
+            kernfaecher_add()
             waehlbarkeit('spanisch_w', false)
             waehlbarkeit('spanisch_wl', false)
             fs_add()
