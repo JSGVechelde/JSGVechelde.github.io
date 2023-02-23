@@ -1,0 +1,57 @@
+/* Allgemeine Angaben zum Style, die überall benötigt werden*/
+html {
+    /* Festlegen der Schriftart für die gesamte Website*/
+    font-family: 'Rubik', sans-serif; /*Vielleicht hier noch eine andere?*/
+}
+
+/* Hintergrund*/
+.bg {
+    background-color: #e6e6e6;
+}
+
+/*Wenn Teile sichtbar oder nicht sichtbar sein sollen*/
+.visible {
+    display: block
+}
+.invisible {
+    display: none;
+}
+
+/*Style für die Coookie Box*/
+#cookieconsent {
+    width: 20%;
+    background-color: #333333;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 10px 10px 10px;
+    font-family: inherit;
+    color: #f7f7f7;
+}
+
+#cookieheading {
+    font-size: 28px;
+    margin: 10px 20px 10px 20px;
+}
+
+#cookietext {
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+#cookiebutton {
+    padding: 5px 20px 5px 20px;
+    margin: 10px 20px 10px 20px;
+    transition-duration: 0.4s;
+    background-color: #00e600;
+    border: none;
+    border-radius: 0;
+    font-family: inherit;
+    color: #333333;
+    font-size: 20px;
+}
+
+#cookiebutton:hover {
+    background-color: #009900;
+    color: #f7f7f7;
+}

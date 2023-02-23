@@ -1,0 +1,124 @@
+/*Buttons enabeln und disabeln*/
+
+.enabledbutton {
+    border: 2px solid #000066;
+    background-color: #82e2fc;
+}
+
+.enabledbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #06c4f9;
+}
+
+/*Hier fehlt noch disapledButton und chosenButttom*/
+
+/*Grid*/
+.name {
+    grid-area: name;
+}
+
+.infoTaskfields {
+    grid-area: infoTaskfields;
+}
+
+.reset {
+    grid-area: reset;
+}
+
+.continue{
+    grid-area: continue;
+}
+
+.p0Reset {
+    grid-area: p0Reset;
+}
+
+.p1Reset {
+    grid-area: p1Reset;
+}
+
+.p2Reset {
+    grid-area: p2Reset;
+}
+
+.p3Reset {
+    grid-area: p3Reset;
+}
+
+.p4Reset {
+    grid-area: p4Reset;
+}
+
+.p0 {
+    grid-area: p0;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.infoElection {
+    grid-area: infoElection;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    'name infoTaskfields infoTaskfields reset continue'
+    'p0Reset p1Reset p2Reset p3Reset p4Reset'
+    'p0 p1 p2 p3 p4'
+    'infoElection infoElection infoElection infoElection infoElection';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(230, 230, 230, 0.8);
+  text-align: left;
+  padding: 10px 10px;
+  /*font-size: 30px;*/
+}
+
+h3 {
+    margin: 5px 0;
+}
+button {
+    background-color: #82e2fc;
+    margin: 5px 0;
+}
+
+.visible{
+    display: block;
+}
+
+.nonvisible{
+    display: none;
+}
+
+.selectable{
+    background-color: rgb(205, 241, 255);
+}
+
+.notSelectable{
+    background-color: rgb(255, 177, 177);
+}
+
+.selected{
+    background-color: #308ce2;
+    color:rgba(255, 255, 255, 0.85);
+}
