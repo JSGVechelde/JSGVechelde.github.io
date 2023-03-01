@@ -985,7 +985,7 @@ function loadNextBox(b){
             if (subjects[j].gA == false){
                 continue;
             }
-            if (subjects[j].kindOfSubject != 1){
+            if (subjects[j].kindOfSubject != 2){
                 continue;
             }
             if (selectedSubjects[j] == "1"){
